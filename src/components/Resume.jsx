@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from '../static/pdf/resume.pdf';
+import kalpana_resume from '../static/pdf/kalpana_resume.pdf';
 
 const Resume = () => {
   return (
@@ -7,7 +7,7 @@ const Resume = () => {
       {/* Embed the PDF, set it to full screen width and height with responsive classes */}
       <div className="w-full h-[90vh] md:h-screen flex justify-center items-center">
         <embed
-          src={resume}
+          src={kalpana_resume}
           width="100%"
           height="100%" 
           type="application/pdf"

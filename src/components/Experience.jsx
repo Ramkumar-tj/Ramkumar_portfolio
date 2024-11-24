@@ -174,7 +174,7 @@ const Experience = () => {
         {/* iFocus Systec Experience */}
         <div className="card-2 group transition-shadow duration-300 ease-in-out">
           <div className="sm:flex items-start gap-4">
-            <div className="w-1/2">
+            <div className="sm:w-1/2">
               <p className="paragraph text-sm">OCT 2023 – PRESENT</p>
             </div>
             <div className="-mt-0.5">
@@ -244,7 +244,7 @@ const Experience = () => {
     {/* NxtWave Experience */}
     <div className="card-2 group transition-shadow duration-300 ease-in-out">
       <div className="sm:flex items-start gap-4">
-        <div className="sm:w-1/3">
+        <div className="sm:w-1/2">
           <p className="paragraph text-sm">AUG 2022 – JAN 2023</p>
         </div>
         <div className="-mt-0.5">
@@ -302,7 +302,7 @@ const Experience = () => {
               rel="noopener noreferrer"
               className="block card-2 group transition-transform duration-500 ease-out mt-6 hover:scale-105"
               >
-              <div className="flex items-start gap-6">
+              <div className="sm:flex items-start gap-6">
                 {/* Project Image */}
                 <img
                   src={project.image}
