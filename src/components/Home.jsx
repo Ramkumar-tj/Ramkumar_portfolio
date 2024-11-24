@@ -4,19 +4,19 @@ import { FaLinkedin, FaRegFileAlt, FaEnvelope, FaSuitcase } from 'react-icons/fa
 const links = [
   {
     href: 'mailto:poonamallik13@gmail.com',
-    icon: <FaEnvelope className="text-xl" />,
+    icon: <FaEnvelope className="text-base md:text-xl" />,
     text: 'Email',
     delay: 2.0,
   },
   {
     href: 'https://www.linkedin.com/in/kalpana7/',
-    icon: <FaLinkedin className="text-xl" />,
+    icon: <FaLinkedin className="text-base md:text-xl" />,
     text: 'LinkedIn',
     delay: 2.2,
   },
   {
     href: '/resume',
-    icon: <FaRegFileAlt className="text-xl" />,
+    icon: <FaRegFileAlt className="text-base md:text-xl" />,
     text: 'Resume',
     delay: 2.4,
   },
@@ -38,7 +38,7 @@ const Home = () => (
 
         {/* Subheading */}
         <p
-          className="text-lg sm:text-xl md:text-2xl mb-6 md:mb-8 font-light text-white opacity-0 translate-y-10"
+          className="text-lg sm:text-xl md:text-2xl max-sm:text-justify mb-6 md:mb-8 font-light text-white opacity-0 translate-y-10"
           style={{
             animation: `fadeInUp 0.5s ease-out 1.2s forwards`,
           }}
@@ -48,7 +48,7 @@ const Home = () => (
 
         {/* Description */}
         <p
-          className="text-base sm:text-lg md:text-xl mb-8 md:mb-12 font-light text-white opacity-0 translate-y-10"
+          className="text-base sm:text-lg md:text-xl max-sm:text-justify mb-8 md:mb-12 font-light text-white opacity-0 translate-y-10"
           style={{
             animation: `fadeInUp 0.5s ease-out 1.4s forwards`,
           }}
@@ -57,14 +57,14 @@ const Home = () => (
         </p>
 
         {/* Action Buttons */}
-        <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center space-y-4 lg:space-y-0 lg:space-x-4">
+        <div className="flex flex-row items-center justify-center space-y-0 space-x-2 sm:space-x-4">
           {links.map((link, index) => (
             <a
               key={index}
               href={link.href}
               target={link.href.startsWith('http') ? '_blank' : '_self'}
               rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-              className="btn max-lg:w-full opacity-0 translate-y-10"
+              className="btn opacity-0 translate-y-10"
               style={{
                 animation: `fadeInUp 0.5s ease-out ${link.delay}s forwards`,
               }}
@@ -84,7 +84,7 @@ const Home = () => (
         animation: `fadeInUp 0.5s ease-out 3.0s forwards`,
       }}
     >
-      <p className="text-xs sm:text-sm md:text-base">
+      <p className="text-xs sm:text-sm md:text-base text-center max-w-[90%]">
         Bringing seamless user experiences with React, JavaScript, and Tailwind CSS
       </p>
     </div>
