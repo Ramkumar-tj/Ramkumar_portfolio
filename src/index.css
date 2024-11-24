@@ -20,15 +20,10 @@ body {
     @apply md:max-h-[90vh] px-10 overflow-y-auto;
   }
 
- /* Button Styles */
-.button-primary {
-  @apply bg-teal-800 text-white font-medium px-6 py-3 rounded-lg transition-all hover:bg-teal-700 hover:shadow-lg border border-transparent;
-}
 
-.button-secondary {
-  @apply border border-teal-600 text-teal-600 font-medium px-6 py-3 rounded-lg transition-all hover:bg-teal-600 hover:text-white;
-}
-
+  .input {
+    @apply outline-none w-full p-3 bg-slate-800 focus:bg-slate-900 text-white border border-slate-300 focus:border-slate-300 rounded;
+  }
 /* Card Styles */
 .card, .card-2 {
   @apply hover:bg-teal-300/10 hover:text-slate-200 shadow-md rounded-lg border border-slate-50/10 p-2 sm:p-6 transition-transform transform duration-300 hover:shadow-lg;
@@ -41,7 +36,7 @@ body {
 
 /* Typography */
 .heading {
-  @apply text-white font-bold text-3xl mb-6 text-center;
+  @apply text-slate-200 font-bold text-3xl mb-6 text-center;
 }
 
 .subheading {
@@ -67,7 +62,7 @@ body {
 }
 
 .btn {
-  @apply bg-black/10 border border-slate-50/25 text-teal-600 inline-flex items-center justify-center gap-2 text-base sm:text-lg font-medium py-3 px-6 md:py-2.5 md:px-8 rounded shadow-lg transform transition-transform duration-300 hover:bg-teal-600/10 hover:shadow-2xl;
+  @apply bg-black/10 border border-slate-600 text-teal-600 inline-flex items-center justify-center gap-2 text-base sm:text-lg font-medium py-3 px-6 md:py-2.5 md:px-8 rounded shadow-lg transform transition-transform duration-300 hover:bg-teal-600/10 hover:shadow-2xl;
 }
 
 .badge {

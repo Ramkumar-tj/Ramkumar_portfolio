@@ -5,12 +5,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import CursorEffect from './components/CursorEffect';
 import Header from './components/Header';
 import Home from './components/Home';
-import About from './components/About';
 import Projects from './components/Projects';
 import Freelance from './components/Freelance';
-import Skills from './components/Skills';
-import Contact from './components/Contact';
 import Experience from './components/Experience';
+import Resume from './components/Resume';
 
 const App = () => (
   <Router>
@@ -20,12 +18,10 @@ const App = () => (
       <div className="lg:flex-grow h-full flex flex-col lg:flex-row">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/freelance" element={<Freelance />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="/experience" element={<Experience />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
       </div>
     </div>

@@ -21,23 +21,6 @@ const Contact = () => {
     }));
   };
 
-  const validateEmail = (email) => {
-    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    return emailPattern.test(email);
-  };
-
-  const verifyEmail = async (email) => {
-    try {
-      const apiKey = 'YOUR_HUNTER_API_KEY'; // Replace with your Hunter.io API Key
-      const response = await axios.get(`https://api.hunter.io/v2/email-verifier?email=${email}&api_key=${apiKey}`);
-      const data = response.data.data;
-      return data.result === 'deliverable';  // Returns true if the email is deliverable
-    } catch (error) {
-      console.error("Error verifying email", error);
-      return false;
-    }
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 

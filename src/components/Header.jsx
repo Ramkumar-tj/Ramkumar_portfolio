@@ -6,11 +6,11 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const isActive = (path) =>
-    location.pathname === path ? 'text-teal-500 font-semibold' : '';
+    location.pathname === path ? 'text-teal-300 font-semibold' : '';
 
   return (
-    <header className="fixed w-full bg-slate-600/20 text-slate-200 font-medium shadow-lg z-10">
-      <nav className="container mx-auto flex justify-between items-center p-4 py-6">
+    <header className="fixed w-full bg-teal-900 text-slate-300 font-medium shadow-lg z-10">
+      <nav className="container mx-auto flex justify-between items-center p-4 py-5">
         {/* Logo */}
         <h1 className="text-xl font-bold">Kalpana Portfolio</h1>
 
@@ -32,7 +32,7 @@ const Header = () => {
           <li>
             <Link
               to="/"
-              className={`hover:text-teal-500 ${isActive('/')}`}
+              className={`hover:text-teal-400 ${isActive('/')}`}
               onClick={() => setIsOpen(false)}
             >
               HOME
@@ -42,7 +42,7 @@ const Header = () => {
           <li>
             <Link
               to="/experience"
-              className={`hover:text-teal-500 ${isActive('/experience')}`}
+              className={`hover:text-teal-400 ${isActive('/experience')}`}
               onClick={() => setIsOpen(false)}
             >
               CAREER HIGHLIGHTS
@@ -50,17 +50,17 @@ const Header = () => {
           </li>
           <li>
             <Link
-              to="/projects"
-              className={`hover:text-teal-500 ${isActive('/projects')}`}
+              to="/resume"
+              className={`hover:text-teal-400 ${isActive('/resume')}`}
               onClick={() => setIsOpen(false)}
             >
-              PROJECTS
+              RESUME
             </Link>
           </li>
           <li>
             <Link
               to="/freelance"
-              className={`hover:text-teal-500 ${isActive('/freelance')}`}
+              className={`hover:text-teal-400 ${isActive('/freelance')}`}
               onClick={() => setIsOpen(false)}
             >
               FREELANCE

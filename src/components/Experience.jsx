@@ -6,7 +6,6 @@ import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPython, FaBootstrap, FaJira, FaDat
 import t_app from '../static/images/t_app.png';
 import t_website from '../static/images/t_website.png'
 import covid from '../static/images/covid.png';
-import Kalpana from '../static/pdf/resume.pdf'
 
 const Experience = () => {
   const [animate, setAnimate] = useState(false);
@@ -198,12 +197,12 @@ const Experience = () => {
                 <span>Tracked all UI-specific tasks and bugs using JIRA for both the application and website.</span>
               </li>
               <li className="flex flex-wrap gap-2 ms-2 mt-4">
-              <p class="badge">HTML5</p>
-              <p class="badge">CSS3</p>
-              <p class="badge">Bootstrap</p>
-              <p class="badge">Tailwind</p>
-              <p class="badge">JavaScript</p>
-              <p class="badge">React</p>
+              <p className="badge">HTML5</p>
+              <p className="badge">CSS3</p>
+              <p className="badge">Bootstrap</p>
+              <p className="badge">Tailwind</p>
+              <p className="badge">JavaScript</p>
+              <p className="badge">React</p>
               </li>
             </ul>
           </div>
@@ -232,10 +231,10 @@ const Experience = () => {
                 <span>Handled full project lifecycles from concept to deployment, ensuring client satisfaction with final results.</span>
               </li>
               <li className="flex flex-wrap gap-2 ms-2 mt-4">
-                <p class="badge">HTML5</p>
-                <p class="badge">CSS3</p>
-                <p class="badge">Bootstrap</p>
-                <p class="badge">Tailwind</p>
+                <p className="badge">HTML5</p>
+                <p className="badge">CSS3</p>
+                <p className="badge">Bootstrap</p>
+                <p className="badge">Tailwind</p>
             </li>
             </ul>
           </div>
@@ -264,10 +263,10 @@ const Experience = () => {
               <span>Provided guidance to ensure academic progress and improve problem-solving skills.</span>
             </li>
             <li className="flex flex-wrap gap-2 ms-2 mt-4">
-              <p class="badge">HTML5</p>
-              <p class="badge">CSS3</p>
-              <p class="badge">Bootstrap</p>
-              <p class="badge">Python</p>
+              <p className="badge">HTML5</p>
+              <p className="badge">CSS3</p>
+              <p className="badge">Bootstrap</p>
+              <p className="badge">Python</p>
             </li>
           </ul>
         </div>
@@ -275,14 +274,14 @@ const Experience = () => {
     </div>
       </div>
         {/* Add Resume Button */}
-    <div className="text-right mt-8">
+    <div className="mt-8">
       <a
-        href="/path/to/your/resume.pdf"  // Provide the correct path to your resume PDF
-        target="_blank"
+        href="/resume"  // Provide the correct path to your resume PDF
         rel="noopener noreferrer"
-        className="btn text-teal-500 hover:text-teal-300"
+        className="text-base sm:text-lg text-slate-300 group hover:text-teal-300 hover:scale-105 transisiton-all duration-500"
       >
-        View Resume
+        View Full Resume
+        <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="ms-2 text-slate-300 group-hover:text-teal-300 text-xs" />
       </a>
       </div>
       </section>

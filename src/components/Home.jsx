@@ -49,7 +49,7 @@ const Home = () => (
             animation: `fadeInUp 0.5s ease-out 1.2s forwards`,
           }}
         >
-          A passionate UI Developer and Freelancer with 1.8+ years of experience creating seamless and engaging web applications.
+          A skilled UI Developer and Freelancer with over 2.3+ years of experience in delivering high-quality, user-focused web applications.
         </p>
 
         {/* Description */}
@@ -59,7 +59,7 @@ const Home = () => (
             animation: `fadeInUp 0.5s ease-out 1.4s forwards`,
           }}
         >
-          I specialize in building responsive and user-friendly interfaces using React.js, JavaScript, and Tailwind CSS. Let's create seamless web experiences together!
+          Expert in designing and developing responsive, scalable, and intuitive user interfaces with React.js, JavaScript, and Tailwind CSS to create exceptional digital experiences.
         </p>
 
         {/* Action Buttons */}

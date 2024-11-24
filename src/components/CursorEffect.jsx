@@ -2,13 +2,11 @@ import React, { useEffect, useState } from "react";
 
 const CursorEffect = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
     const handleMouseMove = (e) => {
       const { clientX, clientY } = e;
       setPosition({ x: clientX, y: clientY });
-      setIsActive(true);
     };
 
     window.addEventListener("mousemove", handleMouseMove);
