@@ -92,7 +92,7 @@ const Freelance = () => {
     <section
       className={`scrollbar flex flex-col justify-center items-center page px-2 transition-opacity duration-1000 ease-in-out ${isPageVisible ? 'opacity-100' : 'opacity-0'}`}
     >
-      <div className="max-w-full sm:max-w-xl">
+      <div className="max-md:px-4 max-w-full sm:max-w-xl">
         {/* Title with animation */}
         <h2
           className="heading font-bold mb-6 opacity-0 translate-y-10"

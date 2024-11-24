@@ -63,14 +63,14 @@ const Home = () => (
         </p>
 
         {/* Action Buttons */}
-        <div className="flex flex-col lg:flex-row items-start justify-center space-y-4 lg:space-y-0 lg:space-x-4">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center space-y-4 lg:space-y-0 lg:space-x-4">
           {links.map((link, index) => (
             <a
               key={index}
               href={link.href}
               target={link.href.startsWith('http') ? '_blank' : '_self'}
               rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-              className="btn opacity-0 translate-y-10"
+              className="btn max-lg:w-full opacity-0 translate-y-10"
               style={{
                 animation: `fadeInUp 0.5s ease-out ${link.delay}s forwards`,
               }}

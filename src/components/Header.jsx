@@ -25,7 +25,7 @@ const Header = () => {
 
         {/* Navigation Links */}
         <ul
-          className={`flex flex-col md:flex-row absolute md:static w-full md:w-auto top-16 md:top-0 left-0 md:left-auto p-6 md:p-0 space-y-4 md:space-y-0 md:space-x-6 shadow-md md:shadow-none transition-transform duration-300 ${
+          className={`bg-teal-900 flex flex-col md:flex-row absolute md:static w-full md:w-auto top-16 md:top-0 left-0 md:left-auto p-6 md:p-0 space-y-4 md:space-y-0 md:space-x-6 shadow-md md:shadow-none transition-transform duration-300 ${
             isOpen ? 'block' : 'hidden'
           } md:flex`}
         >
