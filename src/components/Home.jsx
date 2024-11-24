@@ -15,16 +15,10 @@ const links = [
     delay: 2.2,
   },
   {
-    href: 'https://www.naukri.com/mnjuser/profile',
-    icon: <FaSuitcase className="text-xl" />,
-    text: 'Naukri',
-    delay: 2.4,
-  },
-  {
     href: '/resume',
     icon: <FaRegFileAlt className="text-xl" />,
     text: 'Resume',
-    delay: 2.6,
+    delay: 2.4,
   },
 ];
 

@@ -44,6 +44,43 @@ const Experience = () => {
     }
   };
 
+  const experiences = [
+    {
+      duration: "OCT 2023 – PRESENT",
+      role: "UI Developer",
+      company: "iFocus Systec",
+      responsibilities: [
+        "Created responsive and accessible designs for mobile, tablet, and desktop views based on Figma designs provided by UI/UX designers.",
+        "Collaborated with back-end developers, UI/UX designers, and other team members to translate design requirements into functional components.",
+        "Ensured responsive, modular, maintainable, and performant code to deliver seamless user experiences.",
+        "Tracked all UI-specific tasks and bugs using JIRA for both the application and website.",
+      ],
+      skills: ["HTML5", "CSS3", "Bootstrap", "Tailwind", "JavaScript", "React"],
+    },
+    {
+      duration: "FEB 2023 - PRESENT",
+      role: "Web Developer",
+      company: "Freelance",
+      responsibilities: [
+        "Collaborated with clients to understand their requirements and deliver customized web solutions within deadlines.",
+        "Optimized websites for performance, SEO, and accessibility to enhance user experience and visibility.",
+        "Handled full project lifecycles from concept to deployment, ensuring client satisfaction with final results.",
+      ],
+      skills: ["HTML5", "CSS3", "Bootstrap", "Tailwind"],
+    },
+    {
+      duration: "AUG 2022 – JAN 2023",
+      role: "Teaching Assistant",
+      company: "NxtWave",
+      responsibilities: [
+        "Assisted fellow students by resolving their queries and clarifying concepts.",
+        "Fostered a collaborative learning environment to enhance peer understanding of key topics.",
+        "Provided guidance to ensure academic progress and improve problem-solving skills.",
+      ],
+      skills: ["HTML5", "CSS3", "Bootstrap", "Python"],
+    },
+  ];
+
   const projects = [
     {
       name: "TestServ - Website",
@@ -82,7 +119,7 @@ const Experience = () => {
   ];
 
   return (
-    <div className="overflow-hidden flex flex-col lg:flex-row gap-10 scroll-smooth mx-auto min-h-[90vh] lg:max-w-screen-xl mt-10 md:mt-0 px-2 py-12 md:px-12 md:py-20 lg:px-16 lg:py-0">
+    <div className="overflow-hidden flex flex-col lg:flex-row gap-10 scroll-smooth mx-auto sm:min-h-[90vh] lg:max-w-screen-xl sm:mt-10 md:mt-0 px-2 sm:py-12 md:px-12 md:py-20 lg:px-16 lg:py-0">
       <div className="w-auto lg:w-1/2">
         {/* My Info */}
         <section className={`section-container bg-transparent ${animate ? "animate__animated animate__fadeInUp" : ""}`}>
@@ -143,7 +180,7 @@ const Experience = () => {
         </section>
       </div>
 
-      <div className="scrollbar max-h-[80vh] overflow-y-auto">
+      <div className="scrollbar sm:max-h-[80vh] sm:overflow-y-auto">
         {/* About Me Section */}
         <section
           className={`section-container mb-6 bg-transparent ${animate ? "animate__animated animate__fadeInUp" : ""}`}
@@ -166,126 +203,45 @@ const Experience = () => {
 
         {/* Experience Section */}
         <section
-          className={`section-container mb-6 bg-transparent ${animate ? "animate__animated animate__fadeInUp" : ""}`}
-          id="experience"
-        >
+      className={`section-container mb-6 bg-transparent ${
+        animate ? "animate__animated animate__fadeInUp" : ""
+      }`}
+      id="experience"
+    >
       <h2 className="section-title">Experience</h2>
       <div className="space-y-6">
-        {/* iFocus Systec Experience */}
-        <div className="card-2 group transition-shadow duration-300 ease-in-out">
-          <div className="sm:flex items-start gap-4">
-            <div className="sm:w-1/2">
-              <p className="paragraph text-sm">OCT 2023 – PRESENT</p>
+        {experiences.map((experience, index) => (
+          <div
+            key={index}
+            className="card-2 group transition-shadow duration-300 ease-in-out"
+          >
+            <div className="w-full sm:grid sm:grid-cols-3">
+
+                <p className="paragraph text-sm col-span-1">{experience.duration}</p>
+              
+              <div className="-mt-0.5 col-span-2">
+                <h3 className="subheading">{`${experience.role} . ${experience.company}`}</h3>
+                <ul className="space-y-3 pt-2 text-justify max-w-[90%]">
+                  {experience.responsibilities.map((task, idx) => (
+                    <li key={idx} className="flex gap-2">
+                      <span>- </span>
+                      <span>{task}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="flex flex-wrap gap-2 ms-2 mt-4">
+                  {experience.skills.map((skill, idx) => (
+                    <p key={idx} className="badge">
+                      {skill}
+                    </p>
+                  ))}
+                </div>
+              </div>
             </div>
-            <div className="-mt-0.5">
-              <h3 className="subheading whitespace-wrap">UI Developer . iFocus Systec</h3>
-              <ul className="space-y-3 pt-2 text-justify max-w-[90%]">
-                <li className="flex gap-2">
-                  <span>- </span>
-                  <span>Created responsive and accessible designs for mobile, tablet, and desktop views based on Figma designs provided by UI/UX designers.</span>
-                </li>
-                <li className="flex gap-2">
-                  <span>- </span>
-                  <span>Collaborated with back-end developers, UI/UX designers, and other team members to translate design requirements into functional components.</span>
-                </li>
-                <li className="flex gap-2">
-                <span>- </span>
-                <span>Ensured responsive, modular, maintainable, and performant code to deliver seamless user experiences.</span>
-              </li>
-              <li className="flex gap-2">
-                <span>- </span>
-                <span>Tracked all UI-specific tasks and bugs using JIRA for both the application and website.</span>
-              </li>
-              <li className="flex flex-wrap gap-2 ms-2 mt-4">
-              <p className="badge">HTML5</p>
-              <p className="badge">CSS3</p>
-              <p className="badge">Bootstrap</p>
-              <p className="badge">Tailwind</p>
-              <p className="badge">JavaScript</p>
-              <p className="badge">React</p>
-              </li>
-            </ul>
           </div>
-        </div>
+        ))}
       </div>
-
-  {/* Freelance Web Developer Experience */}
-    <div className="card-2 group transition-shadow duration-300 ease-in-out">
-        <div className="sm:flex items-start gap-4">
-          <div className="sm:w-1/2">
-            <p className="paragraph text-sm">FEB 2023 - PRESENT</p>
-          </div>
-          <div className="-mt-0.5">
-            <h3 className="subheading">Web Developer . Freelance</h3>
-            <ul className="space-y-3 pt-2 text-justify max-w-[90%]">
-              <li className="flex gap-2">
-                <span>- </span>
-                <span>Collaborated with clients to understand their requirements and deliver customized web solutions within deadlines.</span>
-              </li>
-              <li className="flex gap-2">
-                <span>- </span>
-                <span>Optimized websites for performance, SEO, and accessibility to enhance user experience and visibility.</span>
-              </li>
-              <li className="flex gap-2">
-                <span>- </span>
-                <span>Handled full project lifecycles from concept to deployment, ensuring client satisfaction with final results.</span>
-              </li>
-              <li className="flex flex-wrap gap-2 ms-2 mt-4">
-                <p className="badge">HTML5</p>
-                <p className="badge">CSS3</p>
-                <p className="badge">Bootstrap</p>
-                <p className="badge">Tailwind</p>
-            </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-    {/* NxtWave Experience */}
-    <div className="card-2 group transition-shadow duration-300 ease-in-out">
-      <div className="sm:flex items-start gap-4">
-        <div className="sm:w-1/2">
-          <p className="paragraph text-sm">AUG 2022 – JAN 2023</p>
-        </div>
-        <div className="-mt-0.5">
-          <h3 className="subheading">Teaching Assistant . NxtWave</h3>
-          <ul className="space-y-3 pt-2 text-justify max-w-[90%]">
-            <li className="flex gap-2">
-              <span>- </span>
-              <span>Assisted fellow students by resolving their queries and clarifying concepts.</span>
-            </li>
-            <li className="flex gap-2">
-              <span>- </span>
-              <span>Fostered a collaborative learning environment to enhance peer understanding of key topics.</span>
-            </li>
-            <li className="flex gap-2">
-              <span>- </span>
-              <span>Provided guidance to ensure academic progress and improve problem-solving skills.</span>
-            </li>
-            <li className="flex flex-wrap gap-2 ms-2 mt-4">
-              <p className="badge">HTML5</p>
-              <p className="badge">CSS3</p>
-              <p className="badge">Bootstrap</p>
-              <p className="badge">Python</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-      </div>
-        {/* Add Resume Button */}
-    <div className="mt-8">
-      <a
-        href="/resume"  // Provide the correct path to your resume PDF
-        rel="noopener noreferrer"
-        className="text-base sm:text-lg text-slate-300 group hover:text-teal-300 hover:scale-105 transisiton-all duration-500"
-      >
-        View Full Resume
-        <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="ms-2 text-slate-300 group-hover:text-teal-300 text-xs" />
-      </a>
-      </div>
-      </section>
-
+    </section>
 
       {/* Projects Section */}
       <section
@@ -342,10 +298,10 @@ const Experience = () => {
             {skills.map((skill, index) => (
               <div
                 key={index}
-                className={`card transition duration-300 ease-in-out group p-4 rounded-lg`}
+                className={`card hover:scale-100 transition duration-300 ease-in-out group p-4 rounded-lg`}
               >
                 {/* Skill Icon */}
-                <div className="flex items-start mb-3 gap-4">
+                <div className="flex justify-between items-start mb-3">
                 <div>
                   <h3 className="subheading text-xl group-hover:text-teal-300">{skill.name}</h3>
                   <p className="paragraph">{skill.description}</p>
