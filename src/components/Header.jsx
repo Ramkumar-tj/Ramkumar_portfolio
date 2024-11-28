@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import k_logo from '../static/videos/k_logo.mp4';
 
 const Header = () => {
   const location = useLocation();
@@ -10,9 +11,18 @@ const Header = () => {
 
   return (
     <header className="fixed w-full bg-teal-900 text-slate-300 font-medium shadow-lg z-10">
-      <nav className="container mx-auto flex justify-between items-center p-4 py-5">
+      <nav className="md:w-[90vw] lg:w-[85vw] mx-auto flex justify-between items-center px-6 md:px-2 py-4">
         {/* Logo */}
-        <h1 className="text-xl font-bold">Kalpana Portfolio</h1>
+        <a href='/'>
+        <video
+          src={k_logo}
+          autoPlay
+          loop
+          muted
+          className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg shadow-md"
+          aria-label="Logo"
+        ></video>
+      </a>
 
         {/* Hamburger Icon */}
         <button
@@ -41,14 +51,14 @@ const Header = () => {
 
           <li>
             <Link
-              to="/experience"
-              className={`hover:text-teal-400 ${isActive('/experience')}`}
+              to="/career"
+              className={`hover:text-teal-400 ${isActive('/career')}`}
               onClick={() => setIsOpen(false)}
             >
               CAREER HIGHLIGHTS
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               to="/resume"
               className={`hover:text-teal-400 ${isActive('/resume')}`}
@@ -56,14 +66,14 @@ const Header = () => {
             >
               RESUME
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
-              to="/freelance"
-              className={`hover:text-teal-400 ${isActive('/freelance')}`}
+              to="/contact"
+              className={`hover:text-teal-400 ${isActive('/contact')}`}
               onClick={() => setIsOpen(false)}
             >
-              FREELANCE
+              CONTACT
             </Link>
           </li>
         </ul>

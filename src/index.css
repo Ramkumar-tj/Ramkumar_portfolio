@@ -3,21 +3,21 @@
 @tailwind utilities;
 
 body {
-  @apply font-sans;
+  @apply text-xs sm:text-sm font-sans;
 }
 
 @layer components {
 
   .main {
-    @apply bg-slate-900 text-slate-400 text-sm flex flex-col sm:items-center w-full pt-20 overflow-hidden scroll-smooth;
+    @apply bg-slate-900 text-slate-400 text-sm flex flex-col sm:items-center w-full sm:pt-24 overflow-hidden scroll-smooth;
   }
   
   .home-page, .page {
-    @apply max-sm:m-4 md:w-[80vw] lg:w-[70vw] text-justify relative border border-slate-300 rounded-lg shadow-md py-20 md:py-40 md:mb-4 md:min-h-[80vh];
+    @apply max-sm:m-4 md:w-[90vw] lg:w-[85vw] h-screen text-justify relative sm:border border-slate-300 rounded-lg shadow-md py-20 md:py-40 md:mb-4;
   }
 
   .page {
-    @apply md:max-h-[90vh] px-10 overflow-y-auto;
+    @apply h-screen px-10 overflow-y-auto;
   }
 
 

@@ -15,7 +15,7 @@ const links = [
     delay: 2.2,
   },
   {
-    href: '/resume',
+    href: '/career',
     icon: <FaRegFileAlt className="text-base md:text-xl" />,
     text: 'Resume',
     delay: 2.4,
@@ -79,12 +79,12 @@ const Home = () => (
 
     {/* Footer Tagline */}
     <div
-      className="absolute bottom-5 left-0 right-0 text-center text-white opacity-0 translate-y-10"
+      className="absolute bottom-5 text-center text-white opacity-0 translate-y-10"
       style={{
         animation: `fadeInUp 0.5s ease-out 3.0s forwards`,
       }}
     >
-      <p className="text-xs sm:text-sm md:text-base text-center max-w-[90%]">
+      <p className="text-xs sm:text-sm md:text-base text-center">
         Bringing seamless user experiences with React, JavaScript, and Tailwind CSS
       </p>
     </div>

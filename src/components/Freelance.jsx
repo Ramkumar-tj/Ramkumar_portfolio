@@ -100,7 +100,7 @@ const Freelance = () => {
             animation: `fadeInUp 0.5s ease-out 0.5s forwards`,
           }}
         >
-          Freelance Projects Inquiry
+        Contact Me for Your Projects
         </h2>
 
         {/* Description with animation */}
@@ -110,7 +110,7 @@ const Freelance = () => {
             animation: `fadeInUp 0.5s ease-out 0.7s forwards`,
           }}
         >
-          Looking for freelance web development services? Fill out the form below, and I'll get back to you as soon as possible.
+          Interested in collaborating on a project or hiring me? Complete the form below, and I’ll respond promptly.
         </p>
 
         {/* Thank You Message with fade-in animation */}

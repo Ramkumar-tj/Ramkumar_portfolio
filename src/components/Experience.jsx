@@ -58,7 +58,7 @@ const Experience = () => {
       skills: ["HTML5", "CSS3", "Bootstrap", "Tailwind", "JavaScript", "React"],
     },
     {
-      duration: "FEB 2023 - PRESENT",
+      duration: "FEB 2023 - SEP 2023",
       role: "Web Developer",
       company: "Freelance",
       responsibilities: [
@@ -119,7 +119,7 @@ const Experience = () => {
   ];
 
   return (
-    <div className="overflow-hidden flex flex-col lg:flex-row gap-10 scroll-smooth mx-auto sm:min-h-[90vh] lg:max-w-screen-xl sm:mt-10 md:mt-0 px-2 sm:py-12 md:px-12 md:py-20 lg:px-16 lg:py-0">
+    <div className="page flex flex-col lg:flex-row gap-10 scroll-smooth mx-auto sm:mt-10 md:mt-0 px-2 sm:py-12 md:px-12 md:py-20 lg:px-16 lg:py-0">
       <div className="w-auto lg:w-1/2">
         {/* My Info */}
         <section className={`section-container bg-transparent ${animate ? "animate__animated animate__fadeInUp" : ""}`}>
@@ -180,7 +180,7 @@ const Experience = () => {
         </section>
       </div>
 
-      <div className="scrollbar sm:max-h-[80vh] sm:overflow-y-auto">
+      <div className="scrollbar lg:max-h-[80vh] lg:overflow-y-auto">
         {/* About Me Section */}
         <section
           className={`section-container mb-6 bg-transparent ${animate ? "animate__animated animate__fadeInUp" : ""}`}
