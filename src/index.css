@@ -13,11 +13,11 @@ body {
   }
   
   .home-page, .page {
-    @apply max-sm:m-4 md:w-[90vw] lg:w-[85vw] h-screen text-justify relative sm:border border-slate-300 rounded-lg shadow-md py-20 md:py-40 md:mb-4;
+    @apply max-sm:m-4 md:w-[90vw] lg:w-[85vw] h-screen xl:h-[85vh] text-justify relative sm:border border-slate-300 rounded-lg shadow-md py-20 md:py-40 md:mb-4;
   }
 
   .page {
-    @apply h-screen px-10 overflow-y-auto;
+    @apply px-10 overflow-y-auto;
   }
 
 
