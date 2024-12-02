@@ -33,7 +33,7 @@ const Home = () => (
             animation: `fadeInUp 0.5s ease-out 1s forwards`,
           }}
         >
-          Hello, I'm Kalpana
+          Hello, I'm Mallu
         </h1>
 
         {/* Subheading */}
