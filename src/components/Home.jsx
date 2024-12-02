@@ -3,7 +3,7 @@ import { FaLinkedin, FaRegFileAlt, FaEnvelope, FaSuitcase } from 'react-icons/fa
 
 const links = [
   {
-    href: 'mailto:poonamallik13@gmail.com',
+    href: 'mailto:psramkumartj@gmail.com',
     icon: <FaEnvelope className="text-base md:text-xl" />,
     text: 'Email',
     delay: 2.0,
